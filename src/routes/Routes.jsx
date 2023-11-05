@@ -18,7 +18,7 @@ import MyProfile from "../pages/MyProfile/MyProfile";
       errorElement: <h2>Error</h2>,
       children: [
         {
-          path: "home",
+          path: "/",
           element: <Home></Home>,
         },
         {
@@ -38,15 +38,17 @@ import MyProfile from "../pages/MyProfile/MyProfile";
           path: "/login",
           element: <Login></Login>,
         },
+
+        {
+          path: "/register",
+          element: <Register></Register>,
+        },
         
       ],
     },
 
     
-    {
-      path: "/register",
-      element: <Register></Register>,
-    },
+    
     
   
 

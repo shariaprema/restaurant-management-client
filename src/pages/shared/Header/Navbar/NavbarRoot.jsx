@@ -9,7 +9,7 @@ const NavbarRoot = ({children}) => {
            
             <div className="drawer-content flex flex-col">
 
-            <div className="w-full mx-auto border-b-[hsla(0,0%,100%,.07)] border-b bg-black py-2 ">
+            <div className="w-full text-sm font-medium mx-auto border-b-[hsla(0,0%,100%,.07)] border-b bg-black py-2 ">
                 <div className='md:flex-none mx-auto px-11 flex justify-between text-center items-center'>
                 <div>
                     <h2 className=''><span className='text-primary'>Opening Hour:</span> 9.00 am to 10.00 pm</h2>

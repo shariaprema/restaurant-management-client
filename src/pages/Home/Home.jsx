@@ -1,10 +1,9 @@
-import NavbarRoot from "../shared/Header/Navbar/NavbarRoot";
 
 const Home = () => {
     return (
-        <div>
-            <NavbarRoot></NavbarRoot>
+        <div className="flex h-screen">
             
+            home
         </div>
     );
 };
