@@ -42,7 +42,6 @@ const Login = () => {
 
 
 
-
   const handleGoogleSignIn =()=>{
     googleSignIn()
     .then((result) => {
@@ -60,7 +59,7 @@ const Login = () => {
 
 
     return (
-        <div className=' min-h-screen h-screen flex mx-auto justify-center'>
+        <div className=' min-h-screen  flex mx-auto justify-center'>
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700
              shadow-none mx-auto justify-center">
             <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased ">
@@ -145,13 +144,9 @@ const Login = () => {
                 <p className=" mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">Don`t have an account <Link to="/register" className="font-medium text-primary transition-colors hover:text-black">Register</Link></p>
                 <Link to='/'></Link>
 
+
                 
-
-
-            </form>
-           
-            <div>
-            <Link to='/'>
+                <Link to='/'>
                 <div  className="flex justify-center items-center ">
                 <button onClick={handleGoogleSignIn}
                 class="flex font-sans text-xs font-bold uppercase justify-center mx-auto  w-full select-none items-center gap-3 rounded-lg border border-blue-gray-500 py-2 px-6 text-center align-middle  text-blue-gray-500 transition-all hover:opacity-75 focus:ring focus:ring-primary active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -166,8 +161,9 @@ const Login = () => {
 
                 </Link>
 
-             
-            </div>
+            </form>
+           
+       
            </div>
            <Toaster
          position="top-right"

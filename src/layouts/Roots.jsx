@@ -8,7 +8,7 @@ function Roots() {
    
 
   <div>
-    <div className="max-w-[1400px] mx-auto font-poppins">
+    <div className="max-w-[1400px] mx-auto font-poppins ">
 
     <NavbarRoot>
     <Outlet></Outlet>
@@ -19,9 +19,6 @@ function Roots() {
   </div>
   
 
-     
-      
- 
   )
 }
 

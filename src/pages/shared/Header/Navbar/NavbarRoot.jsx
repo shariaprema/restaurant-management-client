@@ -15,8 +15,8 @@ const NavbarRoot = ({children}) => {
                     <h2 className=''><span className='text-primary'>Opening Hour:</span> 9.00 am to 10.00 pm</h2>
                 </div>
                 <div className='flex gap-8'>
-                    <h2 className='hidden md:flex'>info@example.com</h2>
-                    <h2 className='hidden sm:flex'>Road-01, Block-B, West London City</h2>
+                    <h2 className='hidden md:flex'>restho@yahoo.com</h2>
+                    <h2 className='hidden sm:flex'>Road-18, Block-A, West London City</h2>
                 </div>
                 </div>
             </div>

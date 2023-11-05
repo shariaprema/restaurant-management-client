@@ -1,7 +1,26 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../../assets/logo/logo1.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../../../Provider/AuthProvider";
 
 const Navbar = () => {
+    
+    const {userLogout,user} = useContext(AuthContext);
+
+  
+    const handleLogOut =()=>{
+        userLogout()
+        .then(() => {
+        console.log('Sign-out successful.');
+        }).catch((error) => {
+        console.log(error.message);
+        });
+    }
+
+
+
+
+
     return (
         <div className=' w-full   mx-auto bg-black px-5 sticky top-0'>
         <div className="flex-none lg:hidden">
@@ -72,15 +91,65 @@ const Navbar = () => {
 
             </div> */}
 
+          
 
 
+
+            
+         { user?
+            <div className="flex justify-center gap-3 items-center">
+            <div >     
+               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                   <div className="w-9 rounded-full">
+                   <img src={user.photoURL} alt={user.displayName} />
+                   </div>
+               </label>
+           </div>
    
-         
+            <div className="menu lg:menu-horizontal  mx-0 my-0 px-0 py-0 ">
+               <li>
+                   <details >
+                   <summary open className="mx-0 my-0 px-0 py-0  bottom-0 "><NavLink 
+                   to='/login'>
+                   <button onClick={handleLogOut} type="button" className="text-gray-900 bg-primary border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-[6px] mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sign Out</button>
+                   </NavLink></summary>
+                   <ul className="menu bg-base-200 rounded-none w-56 right-2 mt-10">
+                   <li><p className="text-sm hidden md:flex lg:flex">{user.email}</p></li>
+                   <li><p className="text-xs font-bold hidden md:flex lg:flex">{user.displayName}</p></li>             
+                   </ul>
+                   </details>
+               </li>
+               
+               </div>
+            </div>
+   
+            :
+   
+           <NavLink 
+           to='/login'>
+           <button type="button" className="text-gray-900 bg-primary border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-[6px] mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Login</button>
+           </NavLink>
+         }
 
-            <NavLink 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <NavLink 
             to='/login'>
                 <button type="button" className="text-gray-900 bg-primary border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-[6px] mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Login</button>
-            </NavLink>
+            </NavLink> */}
             
             
 
