@@ -1,9 +1,10 @@
+import Banner from "../shared/Header/Banner/Banner";
 
 const Home = () => {
     return (
-        <div className="flex h-screen">
+        <div className="flex h-screen min-h-screen">
             
-            home
+           <Banner></Banner>
         </div>
     );
 };

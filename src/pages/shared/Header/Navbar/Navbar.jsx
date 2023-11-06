@@ -48,7 +48,7 @@ const Navbar = () => {
             <li>
                 <details >
                 <summary open className="mx-0 my-0 px-0 py-0  bottom-0 "><NavLink className={({ isActive}) => isActive ? "btn btn-primary btn-sm ": 'btn btn-ghost btn-sm' } to='/myProfile'>My Profile</NavLink></summary>
-                <ul className="menu bg-base-200 rounded-none w-56 mt-10">
+                <ul className="menu bg-base-200 rounded-none w-56 mt-10 z-10">
                 <li><a>Item 1</a></li>
                 <li><a className="">Item 2</a></li>
                 <li><a>Item 3</a></li>
