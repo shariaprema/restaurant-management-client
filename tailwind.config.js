@@ -13,10 +13,15 @@ export default {
     themes: [  {
       
       mytheme: {
-      
-      "primary": "#bf9444",
-       },
+        "primary": "#bf9444",
+        "secondary": "#f6d860",
+        "accent": "#37cdbe",
+        "neutral": "#3d4451",
+        "base-100": "#ffffff",
+      },
     },
+    
+"corporate",
   ], 
   fontFamily: {
         poppins: "'Poppins', sans-serif"
@@ -32,4 +37,17 @@ export default {
 //     poppins: "'Poppins', sans-serif"
 //   }
 // },
+
+
+// {
+//   mytheme: {
+//     "primary": "#bf9444",
+//     "secondary": "#f6d860",
+//     "accent": "#37cdbe",
+//     "neutral": "#3d4451",
+//     "base-100": "#ffffff",
+//   },
+// },
+// "dark",
+// "cupcake",
 

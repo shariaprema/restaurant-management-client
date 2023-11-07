@@ -1,0 +1,264 @@
+[ 
+    {
+    "id": 1,
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/6BbbGQY/Tandoori-Chicken-Pizza15.jpg",
+    "foodCategory": "Pizza",
+    "price": 9.99,
+    "madeBy": "Pizza Maestro Luigi",
+    "foodOrigin": "Italy",
+    "count": 75,
+    "description": "Our Margherita Pizza is a timeless classic straight from the streets of Naples, Italy. Featuring a thin, crispy crust topped with fresh San Marzano tomatoes, creamy mozzarella cheese, garden-fresh basil, and a drizzle of extra-virgin olive oil, this pizza is a masterpiece in simplicity. Savor the perfect harmony of flavors that makes Margherita Pizza the queen of all pizzas. Whether you're a pizza connoisseur or trying it for the first time, you'll fall in love with each cheesy, tomatoey, and aromatic bite. Buon appetito!",
+    "quantity": "12-inch"
+  },
+  {
+    "id": 2,
+    "foodName": "Sushi Platter",
+    "foodImage": "https://i.ibb.co/J2hXG9c/Sushi-Rolls-Plate-21.jpg",
+    "foodCategory": "Japanese Cuisine",
+    "price": 14.99,
+    "madeBy": "Sushi Chef Hiroshi",
+    "foodOrigin": "Japan",
+    "count": 60,
+    "description": "Dive into the exquisite world of Japanese cuisine with our Sushi Platter. This culinary masterpiece showcases a variety of sushi delights, including Nigiri, Sashimi, and Maki rolls. Each piece is handcrafted by our skilled Sushi Chef Hiroshi, using the finest ingredients and fresh-caught seafood. Experience the perfect balance of flavors, textures, and presentation that Japan is famous for. Whether you're a sushi enthusiast or a newcomer to this culinary art, our Sushi Platter promises a journey of taste and elegance.",
+    "quantity": "20"
+  },
+  {
+    "id": 3,
+    "foodName": "Chicken Leg Fry",
+    "foodImage": "https://i.ibb.co/MGtv92Q/Chicken-Leg-Fry2.png",
+    "foodCategory": "Italian Cuisine",
+    "price": 11.99,
+    "madeBy": "Chef Sofia",
+    "foodOrigin": "Italy",
+    "count": 70,
+    "description": "Indulge in the creamy delight of our Spaghetti Carbonara. This Italian classic is prepared with al dente spaghetti, pancetta, eggs, Pecorino Romano cheese, and black pepper. The result is a rich, velvety sauce that clings to each strand of pasta. Chef Sofia's authentic recipe ensures a truly Roman experience that's both comforting and satisfying. Whether you've visited Rome or dream of doing so, our Spaghetti Carbonara brings a taste of Italy to your table.",
+    "quantity": "350"
+  },
+  {
+    "id": 4,
+    "foodName": "Tandoori Chicken",
+    "foodImage": "https://i.ibb.co/BrqLmxD/Tanduri-Chicken4.png",
+    "foodCategory": "Irani Cuisine",
+    "price": 12.99,
+    "madeBy": "Chef Ali",
+    "foodOrigin": "Iran",
+    "count": 50,
+    "description": "Experience the vibrant flavors of India with our Tandoori Chicken. Juicy chicken pieces are marinated in yogurt and a blend of aromatic spices, then cooked in a traditional tandoor (clay oven) until tender and charred. The result is a mouthwatering and smoky chicken dish that's both spicy and flavorful. Chef Rajesh's expertise ensures an authentic and irresistible Indian feast.",
+    "quantity": "200"
+  },
+  {
+    "id": 5,
+    "foodName": "Chicken Shorma with Greek Salad",
+    "foodImage": "https://i.ibb.co/2d0sFBc/Chicken-Shorma-with-Letus-Salad-14.jpg",
+    "foodCategory": "Salad",
+    "price": 8.99,
+    "madeBy": "Chef Katerina",
+    "foodOrigin": "Greece",
+    "count": 80,
+    "description": "Refresh your palate with our refreshing Greek Salad. A delightful medley of crisp cucumbers, juicy tomatoes, Kalamata olives, red onions, and creamy Feta cheese, all tossed in a zesty Greek dressing. This salad captures the essence of Greek cuisine, offering a perfect balance of flavors that's both healthy and delicious. Chef Katerina's culinary artistry brings the Mediterranean sunshine to your plate.",
+    "quantity": "250g"
+  },
+  {
+    "id": 6,
+    "foodName": "Miso Prawn-Fried with Soup",
+    "foodImage": "https://i.ibb.co/T0p7FC3/Prawn-Fried6.png",
+    "foodCategory": "Japanese Soup",
+    "price": 15.99,
+    "madeBy": "Chef Yuki",
+    "foodOrigin": "Japan",
+    "count": 150,
+    "description": "Delight in the warmth and umami flavor of Miso Soup, expertly prepared by Chef Yuki. This traditional Japanese soup features a savory broth made from fermented soybean paste, tofu, seaweed, and green onions. It's a comforting and healthy starter that awakens the palate. Whether you're a fan of Japanese cuisine or seeking a cozy and nutritious beginning to your meal, our Miso Soup is the ideal choice.",
+    "quantity": "250"
+  },
+
+  {
+    "id": 7,
+    "foodName": "Golden Coffee",
+    "foodImage": "https://i.ibb.co/3z8FbtB/Golden-Coffee3.png",
+    "foodCategory": "Coffee",
+    "price": 7.99,
+    "madeBy": "Chef Maria",
+    "foodOrigin": "Italy",
+    "count": 45,
+    "description": "Golden Coffee is the epitome of coffee perfection. Our premium blend, expertly roasted to a deep and rich flavor, embodies the essence of a great cup of coffee. Sourced from the finest coffee beans, our brew offers a symphony of bold and smooth flavors that dance on your taste buds. The aroma to come.Toasted nuts, and a whisper of caramel sweetness.Whether you're a coffee connoisseur or simply enjoy a comforting cup, Golden Coffee invites you to savor the art of coffee in every drop. Brewed with love, it's your golden ticket to a coffee experience like no other.",
+    "quantity": "50"
+  },
+
+  
+{
+  "id": 8,
+  "foodName": "Grilled Salmon Bakery",
+  "foodImage": "https://i.ibb.co/60X3KgH/Grilled-Salmon-Bakery7.png",
+  "foodCategory": "Seafood",
+  "price": 6.99,
+  "madeBy": "Pastry Chef Elena",
+  "foodOrigin": "France",
+  "count": 40,
+  "description": "Grilled Salmon Bakery is a haven for seafood lovers. Our culinary experts have mastered the art of grilling salmon to perfection. Each bite is a burst of smoky, savory flavors that complement the natural richness of the salmon. The carefully curated grilling process ensures that the salmon retains its moisture, resulting in a juicy and tender texture.Join us for a culinary journey that celebrates the best of salmon in a welcoming and cozy bakery setting",
+  "quantity": "230"
+},
+{
+  "id": 9,
+  "foodName": "Farfalle Pasta with Meatballs Spinach Sauce with Fried Chickpeas",
+  "foodImage": "https://i.ibb.co/16Vjgpx/Farfalle-Pasta-with-Meatballs-Spinach-Sauce-with-Fried-Chickpeas12.jpg",
+  "foodCategory": "Thai Cuisine",
+  "price": 11.49,
+  "madeBy": "Chef Nong",
+  "foodOrigin": "Thailand",
+  "count": 55,
+  "description": "Savor the vibrant flavors of Thailand with our Pad Thai Farfalle Pasta. This beloved Thai dish features stir-fried rice Farfalle Pasta with shrimp, chicken, or tofu, all tossed in a sweet and tangy tamarind sauce. It's garnished with crushed peanuts, cilantro, and lime. Chef Nong's authentic recipe guarantees a true Thai culinary experience.",
+  "quantity": "400g"
+},
+{
+  "id": 10,
+  "foodName": "Prawn Fried",
+  "foodImage": "https://i.ibb.co/M2tSfc5/Prawn-Fried10.png",
+  "foodCategory": "Japanese Cuisine",
+  "price": 15.99,
+  "madeBy": "Sushi Chef Akihiro",
+  "foodOrigin": "Japan",
+  "count": 60,
+  "description": "Treat yourself to our delightful Prawn Fried. It features an assortment of Prawn Fried, each with unique ingredients and flavors. Prawn Fried Chef Akihiro's expertise ensures an artful presentation that's as visually stunning as it is delicious. Dive into the world of Prawn Fried with this exquisite combination.",
+  "quantity": "116"
+},
+{
+  "id": 11,
+  "foodName": "Beef Chap Tikka Masala",
+  "foodImage": "https://i.ibb.co/bzqPKCT/Beef-Chap1.png",
+  "foodCategory": "Arabian Cuisine",
+  "price": 12.49,
+  "madeBy": "Azmat Ullah",
+  "foodOrigin": "Arabia",
+  "count": 50,
+  "description": "Delight in the aromatic Beef Chap Tikka Masala, a beloved Indian dish that combines succulent pieces of marinated Beef Chap with a rich tomato and cream sauce. Chef Azmat Ullah's special spice blend ensures an authentic and comforting meal that's perfect when paired with naan or rice.",
+  "quantity": "300g"
+},
+{
+  "id": 12,
+  "foodName": "Chicken Shashlik with Slices Sweet Peppers",
+  "foodImage": "https://i.ibb.co/0J513mV/Chicken-Shashlik-with-Slices-Sweet-Peppers-11.jpg",
+  "foodCategory": "Mediterranean Cuisine",
+  "price": 9.99,
+  "madeBy": "Chef Youssef",
+  "foodOrigin": "Lebanon",
+  "count": 48,
+  "description": "Experience the flavors of the Chicken Shashlik with Slices Sweet Peppers. Shashlik with Slices are wrapped in warm pita bread, then layered with fresh vegetables and tahini sauce. It's a wholesome and satisfying meal inspired by Lebanese cuisine. Chef Youssef's expertise ensures an authentic and mouthwatering delight.",
+  "quantity": "300"
+},
+
+{
+    "id": 13,
+    "foodName": "Spaghetti Mutton-Kabab",
+    "foodImage": "https://i.ibb.co/nQnR0RH/Mutton-Kabab5.png",
+    "foodCategory": "Italian Kabab",
+    "price": 12.99,
+    "madeBy": "Chef Luigi",
+    "foodOrigin": "Italy",
+    "count": 100,
+    "description": "Indulge in the creamy and savory delight of Spaghetti Mutton-Kabab, expertly crafted by Chef Luigi. This Italian classic features al dente Spaghetti Mutton-Kabab, pancetta, eggs, Pecorino Romano cheese, and a pinch of black pepper. It's a Roman masterpiece that's simple, yet incredibly satisfying. Whether you're a pasta connoisseur or a food enthusiast, our Spaghetti Mutton-Kabab is a must-try.",
+    "quantity": "200"
+},
+
+{
+    "id": 14,
+    "foodName": "Masala Chicken",
+    "foodImage": "https://i.ibb.co/D9JfgGq/Masala-Chicken9.png",
+    "foodCategory": "Pakistan Cuisine",
+    "price": 23.99,
+    "madeBy": "Cuisine Expert Amana",
+    "foodOrigin": "Pakistan",
+    "count": 100,
+    "description": "This dish is a harmonious fusion of aromatic spices and tender chicken, creating a flavorful explosion that's both comforting and exotic. The succulent chicken is marinated in a medley of spices, resulting in a rich and savory experience. It's the perfect choice for those seeking a taste of authentic Pakistan Cuisine",
+    "quantity": "300"
+},
+  {
+    "id": 15,
+    "foodName": "Turkey Chicken Biryani",
+    "foodImage": "https://i.ibb.co/tqZR6yZ/Hyderabadi-Chicken-Biryani-17.jpg",
+    "foodCategory": "Chicken-Biryani",
+    "price": 8.49,
+    "madeBy": "Chef Abdullah Rahim",
+    "foodOrigin": "Turkey",
+    "count": 55,
+    "description": "Indulge in the simplicity of our Turkey Chicken Biryani, a true Italian classic. Chef Abdullah Rahim the freshest ingredients to bring you this delightful dish. Juicy tomatoes, creamy mozzarella, and fragrant basil leaves are drizzled with extra-virgin olive oil and balsamic glaze. The result is a harmony of textures and flavors that encapsulate the essence of Italy. Whether you're enjoying it as an appetizer or a light lunch, this Turkey Chicken Biryani is a reminder of Mediterranean sunsets and the Mediterranean way of life.",
+    "quantity": "500"
+  },
+  {
+    "id": 16,
+    "foodName": "Fry Chicken Fajitas",
+    "foodImage": "https://i.ibb.co/ZMd19Wv/Crispy-Chicken-Fry8.png",
+    "foodCategory": "Mexican Cuisine",
+    "price": 13.99,
+    "madeBy": "Chef Maria",
+    "foodOrigin": "Mexico",
+    "count": 45,
+    "description": "Treat your taste buds to the sizzling and savory delight of Chicken Fajitas, a culinary masterpiece from Mexico. Chef Maria's special marinade transforms tender chicken strips into flavorful perfection. Served on a hot skillet with bell peppers and onions, the aroma alone will whet your appetite. Accompanied by warm tortillas, guacamole, sour cream, and salsa, these fajitas offer a customizable fiesta of flavors. Whether you prefer them spicy or mild, our Chicken Fajitas promise a festive and mouthwatering experience. Share it with friends or enjoy it all to yourself, as every bite is an explosion of Mexican flair.",
+    "quantity": "250g"
+  },
+  {
+    "id": 17,
+    "foodName": "Hyderabadi-Beef Pulaw",
+    "foodImage": "https://i.ibb.co/dGP3zhT/Hyderabadi-Beef-18.jpg",
+    "foodCategory": "Hyderabadi Cuisine",
+    "price": 9.99,
+    "madeBy": "Miraz Rahman",
+    "foodOrigin": "Iran",
+    "count": 60,
+    "description": "Embark on a culinary journey to the heart of Asia with our Hyderabadi-Beef Pulaw. This colorful and nutritious dish is crafted by Chef Mei Lin to highlight the essence of Chinese cuisine. A vibrant medley of fresh vegetables, including broccoli, bell peppers, carrots, and snap peas, is stir-fried to perfection in a savory sauce. The result is a crisp and tender symphony of flavors that's both healthy and satisfying. Whether you're a vegetarian or simply crave a vegetable-packed meal, our Hyderabadi-Beef Pulaw delivers a taste of the Far East to your palate.",
+    "quantity": "420"
+  },
+  {
+    "id": 18,
+    "foodName": "BBQ Club Sandwich with Bacon Fried Egg",
+    "foodImage": "https://i.ibb.co/DgMyb5w/Grilled-Club-Sandwich-with-Bacon-Fried-Egg13.jpg",
+    "foodCategory": "Sandwich",
+    "price": 11.49,
+    "madeBy": "Chef Jack",
+    "foodOrigin": "United States",
+    "count": 50,
+    "description": "Satisfy your barbecue cravings with our Grilled BBQ Club Sandwich with Bacon Fried Egg, a flavorful creation by Chef Jack. Tender, slow-cooked pulled chicken is smothered in smoky BBQ sauce and nestled in a fresh bun. Topped with crispy coleslaw, it offers a perfect balance of savory and tangy. This iconic American dish brings the essence of a Southern cookout right to your table. Whether you're a fan of southern comfort food or a lover of all things BBQ, this sandwich promises to take your taste buds on a delicious journey.",
+    "quantity": "180g"
+  },
+
+  {
+    "id": 19,
+    "foodName": "Chicken with Mushroom Creamsauce",
+    "foodImage": "https://i.ibb.co/5GJNGmC/Afgani-Chicken-with-Mushroom-Creamsauce-20.jpg",
+    "foodCategory": "Mediterranean Cuisine",
+    "price": 10.99,
+    "madeBy": "Chef Nikos",
+    "foodOrigin": "Greece",
+    "count": 70,
+    "description": "Savor the authentic flavors of Greece with our Chicken with Mushroom Creamsauce, a culinary creation by Chef Nikos. Tender slices of seasoned and roasted meat, typically beef or lamb, are wrapped in warm pita bread and topped with fresh tomatoes, onions, and creamy Tzatziki sauce. This classic Mediterranean delight offers a harmonious blend of savory and tangy flavors that transports you to the picturesque streets of Athens. Whether you're a fan of Greek cuisine or want to embark on a Mediterranean adventure, our Chicken with Mushroom Creamsauce is a must-try.",
+    "quantity": "280"
+
+  },
+  {
+    "id": 20,
+    "foodName": "Japanese Dumplings",
+    "foodImage": "https://i.ibb.co/0j3ykrG/Japanese-Dumplings-19.jpg",
+    "foodCategory": "Dumplings",
+    "price": 9.99,
+    "madeBy": "Chef Isabella",
+    "foodOrigin": "Japanese",
+    "count": 60,
+    "description": "Embrace a healthy and plant-based lifestyle with our Japanese Dumplings, thoughtfully created by Chef Isabella. This colorful and nutritious salad features fluffy quinoa, a variety of fresh vegetables, and a zesty lemon vinaigrette. It's a perfect blend of textures and flavors, offering a hearty and refreshing meal. Whether you're a committed, our Japanese Dumplings is a delightful choice that's as good for your taste buds as it is for your health.",
+    "quantity": "320g"
+  },
+  {
+    "id": 21,
+    "foodName": "Traditional Spanish Fried Rice with Prawns",
+    "foodImage": "https://i.ibb.co/YL3V4vg/Traditional-Spanish-Fried-Rice-with-Prawns-16.jpg",
+    "foodCategory": "Spanish Fried Rice",
+    "price": 12.99,
+    "madeBy": "Chef Harry",
+    "foodOrigin": "Spanish",
+    "count": 45,
+    "description": "Satisfy your seafood cravings with our Traditional Spanish Fried Rice with Prawns, a classic British dish prepared by Chef Harry. This hearty meal features flaky white fish, typically cod or haddock, coated in a light and crispy batter. It's accompanied by a generous portion of golden, hand-cut French fries. Top it off with malt vinegar or tartar sauce for the full British experience. Whether you're an Anglophile or simply a fan of good fish and chips, this dish promises to provide a taste of the British seaside.",
+    "quantity": "680"
+  }
+
+
+
+]

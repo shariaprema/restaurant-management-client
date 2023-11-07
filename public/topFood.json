@@ -1,0 +1,47 @@
+
+      [
+        {
+          "id": 1,
+          "foodName": "Afgani Beef Biniyani",
+          "foodImage": "https://i.ibb.co/tbPDrGW/1-Afgani-Beef-Biniyani.png",
+          "foodCategory": "Biniyani",
+          "price": 18.99
+        },
+        {
+          "id": 2,
+          "foodName": "Thai Soup",
+          "foodImage": "https://i.ibb.co/9TS5Lz0/Thai-Soup2.png",
+          "foodCategory": "Soup",
+          "price": 12.99
+        },
+        {
+          "id": 3,
+          "foodName": "Prawn with Noodles",
+          "foodImage": "https://i.ibb.co/rv9zX52/Prawn-with-Noodles3.png ",
+          "foodCategory": "Noodles",
+          "price": 15.99
+        },
+        {
+          "id": 4,
+          "foodName": "Burger with Drinks",
+          "foodImage": "https://i.ibb.co/jTm5x0W/Burger-with-Drinks4.png",
+          "foodCategory": "Burger",
+          "price": 8.99
+        },
+        {
+          "id": 5,
+          "foodName": "Sea Fish Food",
+          "foodImage": "https://i.ibb.co/J3kVNgt/Sea-Fish-Food5.png",
+          "foodCategory": "Sea-Fish",
+          "price": 10.99
+        },
+        {
+          "id": 6,
+          "foodName": "Golden-Special-Pizza",
+          "foodImage": "https://i.ibb.co/TrBKJh6/Golden-Special-Pizza6.png",
+          "foodCategory": "Pizza",
+          "price": 12.99
+        }
+      ]
+      
+  
