@@ -10,6 +10,7 @@ const Register = () => {
 
     const handleRegister = e =>{
         e.preventDefault()
+        const toastId =toast.loading('Register...')
         const form = new FormData(e.currentTarget)
         
         const name =form.get('name')
@@ -41,7 +42,7 @@ const Register = () => {
          console.log(res.user);
          updateUserProfile(img,name)
             .then(()=>{
-                toast.success('User register successfully!') 
+                toast.success('User register successfully!',{id:toastId}) 
                 navigate('/')
 
             })

@@ -9,6 +9,8 @@ import MyProfile from "../pages/MyProfile/MyProfile";
 import Home from "../pages/Home/Home/Home";
 import AllFoodItems from "../pages/AllFoodItems/AllFoodItems/AllFoodItems";
 import SingleFood from "../pages/AllFoodItems/AllFoodItems/SingleFood";
+import FoodPurchase from "../pages/FoodPurchase/FoodPurchase";
+import PrivateRoutes from "./PrivateRoutes";
 
 
   const router = createBrowserRouter([
@@ -33,6 +35,15 @@ import SingleFood from "../pages/AllFoodItems/AllFoodItems/SingleFood";
           loader:({params})=>fetch(`http://localhost:5001/allFoodItems/${params.id}`)
 
         },
+
+
+        {
+          path: "/foodPurchase/:id",
+          element: <PrivateRoutes> <FoodPurchase></FoodPurchase></PrivateRoutes>,
+          loader:({params})=>fetch(`http://localhost:5001/foodPurchase/${params.id}`)
+        },
+
+
 
 
 

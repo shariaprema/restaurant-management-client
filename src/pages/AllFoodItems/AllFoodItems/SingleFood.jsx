@@ -1,7 +1,14 @@
-import { useLoaderData } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const SingleFood = () => {
     const singleFood = useLoaderData();
+    const {user} = useContext(AuthContext)
+
+
+
+
     console.log(singleFood);
     const {_id,foodName,foodImage,foodCategory,price,foodOrigin,quantity,count,description,madeBy} = singleFood || {}
     return (
@@ -42,13 +49,16 @@ const SingleFood = () => {
                 </p>
 
 
-                <a className="inline-block" href="#">
+               {
+                user?.email ? <>
+                 <div className="inline-block" >
 
+                <Link to={`/foodPurchase/${_id}`}>
                 <button
                     className=" dark:bg-black  dark:hover:bg-black dark:focus:ring-primary text-white bg-black hover:bg-primary focus:ring-0 focus:outline-none focus:ring-black flex items-center gap-2 px-3 py-3 font-sans text-xs font-bold text-center uppercase align-middle transition-all rounded-lg select-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                 >
-                   Confirm Order
+                Confirm Order
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -65,7 +75,48 @@ const SingleFood = () => {
                     ></path>
                     </svg>
                 </button>
-                </a>
+
+
+                </Link>
+                </div>
+                
+                </>
+                :
+                <>
+                 <div className="inline-block" >
+
+                <Link to='/login'>
+                <button
+                    className=" dark:bg-black  dark:hover:bg-black dark:focus:ring-primary text-white bg-black hover:bg-primary focus:ring-0 focus:outline-none focus:ring-black flex items-center gap-2 px-3 py-3 font-sans text-xs font-bold text-center uppercase align-middle transition-all rounded-lg select-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                >
+                Confirm Order
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="w-4 h-4"
+                    >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    ></path>
+                    </svg>
+                </button>
+
+
+                </Link>
+                </div>
+                </>
+               }
+
+
+
+
             </div>
             </div>
 

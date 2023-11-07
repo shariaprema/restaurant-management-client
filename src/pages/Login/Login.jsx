@@ -12,6 +12,7 @@ const Login = () => {
 
     const handleLogin = (e)=>{
         e.preventDefault()
+        const toastId =toast.loading('Logging in...')
         const form = new FormData(e.currentTarget)
         const email =form.get('email')
         const password =form.get('password')
@@ -28,7 +29,7 @@ const Login = () => {
     logInUser(email, password)
     .then((result) => {
         console.log(result.user);
-        toast.success('User logged in successfully')        
+        toast.success('User logged in successfully',{id:toastId})        
         navigate(location?.state ? location.state : '/')
         e.target.reset();       
     
@@ -46,7 +47,7 @@ const Login = () => {
     googleSignIn()
     .then((result) => {
         console.log(result.user);
-        toast.success('User logged in successfully')        
+        toast.success('User logged in successfully!',{id:toastId})        
 
       }).catch((error) => {
        toast.error(error.message)
