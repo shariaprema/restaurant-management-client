@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TopFoodCard = ({topFood}) => {
 
@@ -24,7 +25,9 @@ const TopFoodCard = ({topFood}) => {
                 <h2>{foodCategory}</h2>
             </div>
                 
-            <a href="#" className="text-white bg-black hover:bg-primary focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-full text-sm px-8 py-3 text-center dark:bg-black  dark:hover:bg-black dark:focus:ring-primary">Details</a>
+            <Link to='/allFoodItems'> 
+            <button  className="text-white bg-black hover:bg-primary focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-full text-sm px-8 py-3 text-center dark:bg-black  dark:hover:bg-black dark:focus:ring-primary">Details</button>
+            </Link>
         
             </div>
         

@@ -8,6 +8,7 @@ import Blog from "../pages/Blog/Blog";
 import MyProfile from "../pages/MyProfile/MyProfile";
 import Home from "../pages/Home/Home/Home";
 import AllFoodItems from "../pages/AllFoodItems/AllFoodItems/AllFoodItems";
+import SingleFood from "../pages/AllFoodItems/AllFoodItems/SingleFood";
 
 
   const router = createBrowserRouter([
@@ -21,32 +22,26 @@ import AllFoodItems from "../pages/AllFoodItems/AllFoodItems/AllFoodItems";
           element: <Home></Home>
         },
         {
-          path: "allFoodItems",
+          path: "/allFoodItems",
           element: <AllFoodItems></AllFoodItems>,
           loader:()=>fetch('http://localhost:5001/allFoodItems')
         },
 
         {
-          path: "/detailsFood:id",
-          element: <AllFoodItems></AllFoodItems>,
+          path: "/singleFood/:id",
+          element: <SingleFood></SingleFood>,
           loader:({params})=>fetch(`http://localhost:5001/allFoodItems/${params.id}`)
 
         },
 
 
 
-
-
-
-
-
-
         {
-          path: "blog",
+          path: "/blog",
           element: <Blog></Blog>,
         },  
         {
-          path: "myProfile",
+          path: "/myProfile",
           element: <MyProfile></MyProfile>,
         }, 
         

@@ -30,7 +30,7 @@ const AllFoodItemsCard = ({allFood}) => {
             </p>
         </div>
        
-            <Link to={`/detailsFood/${_id}`}>
+            <Link to={`/singleFood/${_id}`}>
             <div className="p-6 pt-0 flex items-center justify-center">
             <button
             className="block w-1/2  select-none rounded-lg  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase  transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 hover:bd-primary text-white bg-primary hover:bg-white focus:ring-4 hover:text-black focus:outline-none focus:ring-black  disabled:shadow-none"
