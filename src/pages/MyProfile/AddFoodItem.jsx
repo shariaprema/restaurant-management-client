@@ -21,9 +21,10 @@ const AddFoodItem = () => {
             const foodCategory =form.foodCategory.value
             const quantity =form.quantity.value
             const description =form.description.value
+            const price =form.price.value
 
             const addFood={
-                userName,userEmail,foodName,foodOrigin,foodImage,foodCategory,quantity,description
+               price, userName,userEmail,foodName,foodOrigin,foodImage,foodCategory,quantity,description
             }
             console.log(addFood);
 
@@ -49,6 +50,10 @@ const AddFoodItem = () => {
                       });
                   }
                 });
+
+
+
+                
             
 
 

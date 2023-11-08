@@ -9,11 +9,13 @@ import Home from "../pages/Home/Home/Home";
 import AllFoodItems from "../pages/AllFoodItems/AllFoodItems/AllFoodItems";
 import SingleFood from "../pages/AllFoodItems/AllFoodItems/SingleFood";
 import FoodPurchase from "../pages/FoodPurchase/FoodPurchase";
-import PrivateRoutes from "./PrivateRoutes";
-import MyAddedFoodItems from "../pages/MyProfile/MyAddedFoodItems";
+import PrivateRoutes from "../routes/PrivateRoutes";
+
+
 import MyProfile from "../pages/MyProfile/MyProfile";
 import MyOrderedFoodItems from "../pages/MyProfile/MyOrderedFoodItems";
 import AddFoodItem from "../pages/MyProfile/AddFoodItem";
+import MyAddedFoodItems from "../pages/MyProfile/MyAddedFoodItems/MyAddedFoodItems";
 
 
   const router = createBrowserRouter([
@@ -48,22 +50,23 @@ import AddFoodItem from "../pages/MyProfile/AddFoodItem";
 
 
         // my profile
-
-        {
-          path: "/myAddedFoodItems",
-          element: <MyAddedFoodItems></MyAddedFoodItems>,
-          
-        }, 
-
-        {
+         {
           path: "/addFoodItems",
-          element: <AddFoodItem></AddFoodItem>
+          element: <PrivateRoutes><AddFoodItem></AddFoodItem></PrivateRoutes>
           
         },  
 
         {
+          path: "/myAddedFoodItems",
+          element:<PrivateRoutes><MyAddedFoodItems></MyAddedFoodItems></PrivateRoutes>
+          
+        }, 
+
+       
+
+        {
           path: "/myOrderedFoodItems",
-          element: <MyOrderedFoodItems></MyOrderedFoodItems>
+          element: <PrivateRoutes><MyOrderedFoodItems></MyOrderedFoodItems></PrivateRoutes>
           
         },  
 
