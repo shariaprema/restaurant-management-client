@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
 
@@ -160,6 +160,10 @@ const Register = () => {
             </form>
            
            </div>
+
+           <Toaster
+         position="top-right"
+         reverseOrder={false} />  
             
         </div>
     );
