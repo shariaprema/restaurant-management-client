@@ -5,12 +5,15 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Roots from "../layouts/Roots";
 import Blog from "../pages/Blog/Blog";
-import MyProfile from "../pages/MyProfile/MyProfile";
 import Home from "../pages/Home/Home/Home";
 import AllFoodItems from "../pages/AllFoodItems/AllFoodItems/AllFoodItems";
 import SingleFood from "../pages/AllFoodItems/AllFoodItems/SingleFood";
 import FoodPurchase from "../pages/FoodPurchase/FoodPurchase";
 import PrivateRoutes from "./PrivateRoutes";
+import MyAddedFoodItems from "../pages/MyProfile/MyAddedFoodItems";
+import MyProfile from "../pages/MyProfile/MyProfile";
+import MyOrderedFoodItems from "../pages/MyProfile/MyOrderedFoodItems";
+import AddFoodItem from "../pages/MyProfile/AddFoodItem";
 
 
   const router = createBrowserRouter([
@@ -44,6 +47,27 @@ import PrivateRoutes from "./PrivateRoutes";
         },
 
 
+        // my profile
+
+        {
+          path: "/myAddedFoodItems",
+          element: <MyAddedFoodItems></MyAddedFoodItems>,
+          
+        }, 
+
+        {
+          path: "/addFoodItems",
+          element: <AddFoodItem></AddFoodItem>
+          
+        },  
+
+        {
+          path: "/myOrderedFoodItems",
+          element: <MyOrderedFoodItems></MyOrderedFoodItems>
+          
+        },  
+
+
 
 
 
@@ -53,7 +77,7 @@ import PrivateRoutes from "./PrivateRoutes";
         },  
         {
           path: "/myProfile",
-          element: <MyProfile></MyProfile>,
+          element: <MyProfile></MyProfile>
         }, 
         
         

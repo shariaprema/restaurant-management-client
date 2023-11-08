@@ -52,7 +52,7 @@ const FoodPurchase = () => {
         if(data.insertedId){
             Swal.fire({
                 title: "Thank you!",
-                text: "Your Food Purchase Successfully",
+                text: "Food Purchase Successfully",
                 icon: "success",
                
               });
