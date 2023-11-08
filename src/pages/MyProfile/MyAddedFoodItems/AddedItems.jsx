@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const AddedItems = ({addFood}) => {
@@ -13,9 +13,10 @@ const AddedItems = ({addFood}) => {
         <div className="flex items-center space-x-2">
         <div className="avatar">
         <div className="w-24 rounded-xl">
-           
+        {
+        foodImage &&  
             <img src={foodName} />
-           
+        }  
         </div>
         </div>
             

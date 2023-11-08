@@ -50,11 +50,13 @@ const FoodPurchase = () => {
        .then(data=>{
         console.log(data)
         if(data.insertedId){
-            Swal.fire({
-                title: "Thank you!",
-                text: "Food Purchase Successfully",
+         
+              Swal.fire({
+                position: "top-end",
                 icon: "success",
-               
+                title: "Food Purchase Successfully",
+                showConfirmButton: false,
+                timer: 1500
               });
         }
         
@@ -62,7 +64,6 @@ const FoodPurchase = () => {
        })
 
    }
-
 
 
     return (

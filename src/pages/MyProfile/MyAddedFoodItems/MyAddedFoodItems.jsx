@@ -6,7 +6,7 @@ const MyAddedFoodItems = () => {
     const {user} = useContext(AuthContext)
     const [addedFoods,setAddedFoods]=useState([])
 
-    const url = `http://localhost:5001/addFoodItem?email=${user?.email}`
+    const url = `http://localhost:5001/purchaseFood?email=${user?.email}`
 
     useEffect(()=>{
         fetch(url)

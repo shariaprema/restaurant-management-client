@@ -12,8 +12,7 @@ import FoodPurchase from "../pages/FoodPurchase/FoodPurchase";
 import PrivateRoutes from "../routes/PrivateRoutes";
 
 
-import MyProfile from "../pages/MyProfile/MyProfile";
-import MyOrderedFoodItems from "../pages/MyProfile/MyOrderedFoodItems";
+import MyOrderedFoodItems from "../pages/MyProfile/MyOrderedFoodItems/MyOrderedFoodItems";
 import AddFoodItem from "../pages/MyProfile/AddFoodItem";
 import MyAddedFoodItems from "../pages/MyProfile/MyAddedFoodItems/MyAddedFoodItems";
 import AddedItemsUpdate from "../pages/MyProfile/MyAddedFoodItems/AddedItemsUpdate";
@@ -86,11 +85,7 @@ import AddedItemsUpdate from "../pages/MyProfile/MyAddedFoodItems/AddedItemsUpda
           path: "/blog",
           element: <Blog></Blog>,
         },  
-        {
-          path: "/myProfile",
-          element: <MyProfile></MyProfile>
-        }, 
-        
+      
         
 
 
