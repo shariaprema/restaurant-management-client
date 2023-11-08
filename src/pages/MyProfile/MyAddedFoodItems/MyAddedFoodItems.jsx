@@ -33,7 +33,7 @@ const MyAddedFoodItems = () => {
                 <table className="table">
                  
                     <thead>
-                    <tr className='text-base  text-white bg-gray-800 rounded-lg' >
+                    <tr className='text-base  text-white bg-gray-800 ' >
                         <th>
                        
                         </th>                       
@@ -44,6 +44,8 @@ const MyAddedFoodItems = () => {
                         <th>FoodOrigin</th>
                         <th>FoodQuantity</th>  
                         <th>FoodPrice</th>
+                        <th>UpdateFood</th>
+
                                           
                        
                     </tr>

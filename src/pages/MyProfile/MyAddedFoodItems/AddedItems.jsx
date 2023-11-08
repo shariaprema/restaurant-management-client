@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AddedItems = ({addFood}) => {
-    const{userName,userEmail,foodName,foodOrigin,price, foodImage,foodCategory,quantity,description}=addFood || {}
+    const{_id,userName,userEmail,foodName,foodOrigin,price, foodImage,foodCategory,quantity,description}=addFood || {}
    
    
     return (
@@ -9,12 +10,12 @@ const AddedItems = ({addFood}) => {
 
         
         <td>
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2">
         <div className="avatar">
         <div className="w-24 rounded-xl">
-           {
-            foodName &&  <img src={foodName} />
-           }
+           
+            <img src={foodName} />
+           
         </div>
         </div>
             
@@ -44,7 +45,7 @@ const AddedItems = ({addFood}) => {
 
 
          <th>
-        
+         <Link to={`/foodItemsUpdate/${_id}`}> <button>Update</button> </Link>
         </th> 
     </tr>
     );

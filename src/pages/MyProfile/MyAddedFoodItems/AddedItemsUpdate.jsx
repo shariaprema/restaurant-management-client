@@ -1,78 +1,70 @@
-
-import React, { useContext } from 'react';
-import { Toaster } from 'react-hot-toast';
-import { AuthContext } from '../../Provider/AuthProvider';
+import { useContext } from "react";
+import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from 'sweetalert2'
 
-const AddFoodItem = () => {
-
+const AddedItemsUpdate = () => {
+    const updateFood = useLoaderData();
     const {user} = useContext(AuthContext)
-
-    const handleAddFoodItem = e =>{
-        e.preventDefault()
-    
-            const form = e.target
-
-            const userName =form.userName.value
-            const userEmail =form.userEmail.value
-            const foodName =form.foodName.value
-            const foodOrigin =form.foodOrigin.value
-            const foodImage =form.foodImage.value
-            const foodCategory =form.foodCategory.value
-            const quantity =form.quantity.value
-            const description =form.description.value
-            const price =form.price.value
-
-            const addFood={
-               price, userName,userEmail,foodName,foodOrigin,foodImage,foodCategory,quantity,description
-            }
-            console.log(addFood);
+   const{_id, price, userName,userEmail,foodName,foodOrigin,foodImage,foodCategory,quantity,description} = updateFood || {} 
 
 
-            fetch("http://localhost:5001/addFoodItem", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify(addFood),
-              })
-                .then((res) => res.json())
-                .then((data) => {
-                  console.log(data);
+   const handleUpdateFoodItem = e =>{
+    e.preventDefault()
 
-                  if(data.insertedId){
-                    Swal.fire({
-                        title: "Success!",
-                        text: "New Food Item Add Successfully",
-                        icon: "success",
-                        confirmButtonText: 'Cool'
-                       
-                      });
-                  }
-                });
+        const form = e.target
+
+        const userName =form.userName.value
+        const userEmail =form.userEmail.value
+        const foodName =form.foodName.value
+        const foodOrigin =form.foodOrigin.value
+        const foodImage =form.foodImage.value
+        const foodCategory =form.foodCategory.value
+        const quantity =form.quantity.value
+        const description =form.description.value
+        const price =form.price.value
+
+        const addFood={
+          _id, price, userName,userEmail,foodName,foodOrigin,foodImage,foodCategory,quantity,description
+        }
+        console.log(addFood);
 
 
+        fetch(`http://localhost:5001/addFoodItem/${_id}`, {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(addFood),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              console.log(data);
 
-                
-            
+              if(data.insertedId){
+                Swal.fire({
+                    title: "Success!",
+                    text: "Update Food Items Successfully",
+                    icon: "success",
+                    confirmButtonText: 'Okk'
+                   
+                  });
+              }
+            });
 
 
 
-
-
-
-
-    }
-
+}
 
     return (
-        <div>
-            <div className="my-20">
-            <h2>My Food Items</h2>
+        <div  className="my-20">
+            <h2>Update Food Items:{foodName}</h2>
+           
+         
             
             <div class="relative  rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none mx-auto">
             
-            <form onSubmit={handleAddFoodItem} class="mt-8 mb-2  max-w-screen-lg mx-auto ">
+            <form onSubmit={handleUpdateFoodItem} class="mt-8 mb-2  max-w-screen-lg mx-auto ">
                 {/* input field */}
             <div className="flex justify-center items-center gap-5">
             <div className="flex-1">
@@ -101,7 +93,7 @@ const AddFoodItem = () => {
 
 
                 <div class="relative h-11 w-full ">
-                    <input type="text" name="foodName" 
+                    <input type="text" name="foodName" defaultValue={foodName}
                     class="peer h-full w-full rounded-md border border-blue-gray-200  bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -111,7 +103,7 @@ const AddFoodItem = () => {
                 </div>
 
                 <div class="relative h-11 w-full ">
-                    <input type='text' name="foodOrigin" 
+                    <input type='text' name="foodOrigin"  defaultValue={foodOrigin}
                     class="peer h-full w-full rounded-md border border-blue-gray-200  bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -132,7 +124,7 @@ const AddFoodItem = () => {
                 <div class="mb-4 flex flex-col gap-6">
 
                 <div class="relative h-11 w-full min-w-[200px]">
-                    <input type="text" name="foodImage"
+                    <input type="text" name="foodImage" defaultValue={foodImage}
                     class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -144,7 +136,7 @@ const AddFoodItem = () => {
 
 
                 <div class="relative h-11 w-full min-w-[200px]">
-                    <input type="text" name="foodCategory"
+                    <input type="text" name="foodCategory" defaultValue={foodCategory}
                     class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -153,7 +145,7 @@ const AddFoodItem = () => {
                     </label>
                 </div>
                 <div class="relative h-11 w-full min-w-[200px]">
-                    <input type="text" name="price"
+                    <input type="text" name="price" defaultValue={price}
                     class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -164,7 +156,7 @@ const AddFoodItem = () => {
 
 
                 <div class="relative h-11 w-full min-w-[200px]">
-                    <input type="text" name="quantity" 
+                    <input type="text" name="quantity" defaultValue={quantity}
                     class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -182,7 +174,7 @@ const AddFoodItem = () => {
 
 
             <div class="relative h-40 w-full min-w-[200px]">
-                    <textarea type="text" name="description"
+                    <textarea type="text" name="description" defaultValue={description}
                     class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-semibold text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                     placeHolder=" "
                     />
@@ -198,7 +190,7 @@ const AddFoodItem = () => {
                 
             <div className="flex justify-center items-center mt-6">
          
-          <button type="submit" className="text-black bg-primary hover:bg-black focus:ring-4 focus:outline-none focus:ring-primary  dark:bg-primary dark:hover:bg-primary hover:text-white dark:focus:ring-primary font-medium rounded-lg text-base px-8 py-2.5 text-center inline-flex  mx-auto  btn-block justify-center items-center ">
+          <button type="submit"   className="text-black bg-primary hover:bg-black focus:ring-4 focus:outline-none focus:ring-primary  dark:bg-primary dark:hover:bg-primary hover:text-white dark:focus:ring-primary font-medium rounded-lg text-base px-8 py-2.5 text-center inline-flex  mx-auto  btn-block justify-center items-center ">
           Add Item
             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -210,14 +202,15 @@ const AddFoodItem = () => {
             </form>
             </div>
 
-            <Toaster
-            position="top-center"
-            reverseOrder={false}
-            />
+           
             
+       
         </div>
-        </div>
+            
+       
     );
 };
 
-export default AddFoodItem;
+export default AddedItemsUpdate;
+
+
