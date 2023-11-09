@@ -141,7 +141,7 @@ const Navbar = () => {
             <div className="flex justify-center gap-3 items-center">
             <div >     
                
-               <details className="dropdown">
+               <details className="dropdown z-50">
                 <summary className=" btn btn-primary">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div class="avatar online placeholder">
@@ -150,7 +150,7 @@ const Navbar = () => {
                         </div>
                     </div> 
                 </label></summary>
-                <ul className=" shadow gap-6  w-52 mt-2  dropdown-content z-[1] bg-black rounded-xl mx-auto">
+                <ul className=" shadow gap-6  w-52 mt-2  dropdown-content  bg-black rounded-xl mx-auto z-50">
                 <li> <NavLink className={({ isActive}) => isActive ? "btn btn-primary w-full btn-sm": 'btn btn-ghost btn-sm w-full hover:bg-primary' } 
                  to='/myAddedFoodItems'>My added food items</NavLink></li>
 

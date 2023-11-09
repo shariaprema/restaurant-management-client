@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
     
     return (
-        <div className="carousel w-full sm:h-[400px] md:h-[500px] lg:h-[600px]">
-            <div id="slide1" className="carousel-item relative w-full">
+        <div className="carousel w-full sm:h-[400px] md:h-[500px] lg:h-[600px] z-0">
+            <div id="slide1" className="carousel-item relative w-full z-0">
                 <img src={img1} className="w-full " />
                 <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white  pl-16 lg:w-1/2 md:w-3/5 sm:w-1/4 sm:flex-wrap text-ellipsis overflow-hidden'>
@@ -26,7 +26,7 @@ const Banner = () => {
                     <a href="#slide2" className="btn btn-square text-white hover:text-black bg-black">❯</a>
                 </div>
             </div>
-            <div id="slide2" className="carousel-item relative w-full">
+            <div id="slide2" className="carousel-item relative w-full z-0">
                 <img src={img2} className="w-full " />
                 <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                 <div className='text-white  pl-16 lg:w-1/2 md:w-3/5 sm:w-1/4 sm:flex-wrap text-ellipsis overflow-hidden'>
@@ -43,7 +43,7 @@ const Banner = () => {
                     <a href="#slide3" className="btn btn-square text-white hover:text-black bg-black ">❯</a>
                 </div>
             </div>
-            <div id="slide3" className="carousel-item relative w-full">
+            <div id="slide3" className="carousel-item relative w-full z-0">
                 <img src={img3} className="w-full " />
                 <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                 <div className='text-white  pl-16 lg:w-1/2 md:w-3/5 sm:w-1/4 sm:flex-wrap text-ellipsis overflow-hidden'>

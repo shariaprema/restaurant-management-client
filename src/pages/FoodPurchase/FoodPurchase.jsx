@@ -41,7 +41,7 @@ const FoodPurchase = () => {
        }
 
 
-       fetch('http://localhost:5001/purchaseFood', {
+       fetch('https://restaurant-management-server-phi.vercel.app/purchaseFood', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

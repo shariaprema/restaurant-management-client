@@ -61,29 +61,29 @@ const Register = () => {
 
 
 
-          fetch('http://localhost:5001/mail', {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(userData),
-          })
-           .then(res=>res.json())
-           .then(data=>{
-            console.log(data)
-            if(data.insertedId){
+        //   fetch('http://localhost:5001/mail', {
+        //     method: "POST",
+        //     headers: {
+        //       "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(userData),
+        //   })
+        //    .then(res=>res.json())
+        //    .then(data=>{
+        //     console.log(data)
+        //     if(data.insertedId){
              
-                  Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: "User Mail Update Successfully!",
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
-            }
+        //           Swal.fire({
+        //             position: "top-end",
+        //             icon: "success",
+        //             title: "User Mail Update Successfully!",
+        //             showConfirmButton: false,
+        //             timer: 1500
+        //           });
+        //     }
             
             
-           })
+        //    })
 
 
     }
@@ -106,7 +106,7 @@ const Register = () => {
 
         <div>
              <div className=''>
-                <h2 className="text-5xl text-center pt-10 font-bold"><span className="text-primary">Res</span>tho Register Page</h2>
+                <h2 className="text-5xl text-center pt-10 font-bold"><span className="text-primary">Res</span>tho register Page</h2>
             </div>
 
             <div>

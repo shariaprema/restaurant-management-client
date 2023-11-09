@@ -15,7 +15,7 @@ const AllFoodItems = () => {
         queryKey: ["allFoodItems", page],
 
         queryFn: ()=>
-        fetch(`http://localhost:5001/allFoodItems?page=${page}`).then((response)=>response.json()),
+        fetch(`https://restaurant-management-server-phi.vercel.app/allFoodItems?page=${page}`).then((response)=>response.json()),
         initialData: {result:[], postCount:0},
     })
 

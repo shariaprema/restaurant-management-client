@@ -7,7 +7,7 @@ const MyAddedFoodItems = () => {
     const {user} = useContext(AuthContext)
     const [addedFoods,setAddedFoods]=useState([])
 
-    const url = `http://localhost:5001/purchaseFood?email=${user?.email}`
+    const url = `https://restaurant-management-server-phi.vercel.app/purchaseFood?email=${user?.email}`
 
     useEffect(()=>{
         fetch(url)
@@ -40,7 +40,7 @@ const MyAddedFoodItems = () => {
             console.log(addFood);
 
 
-            fetch("http://localhost:5001/addFoodItem", {
+            fetch("https://restaurant-management-server-phi.vercel.app/addFoodItem", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

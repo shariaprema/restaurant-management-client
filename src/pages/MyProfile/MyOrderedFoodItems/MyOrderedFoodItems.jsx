@@ -8,7 +8,7 @@ const MyOrderedFoodItems = () => {
     const {user} = useContext(AuthContext)
     const [orderedFood,setOrderedFood]=useState([])
 
-    const url = `http://localhost:5001/purchaseFood?email=${user?.email}`
+    const url = `https://restaurant-management-server-phi.vercel.app/purchaseFood?email=${user?.email}`
 
     useEffect(()=>{
         fetch(url)
@@ -24,7 +24,7 @@ const MyOrderedFoodItems = () => {
     const handleDelete = id =>{
       
 
-            fetch(`http://localhost:5001/purchaseFood/${id}`, {
+            fetch(`https://restaurant-management-server-phi.vercel.app/purchaseFood/${id}`, {
                 method: "DELETE",
               })
               

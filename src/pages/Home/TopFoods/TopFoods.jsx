@@ -8,9 +8,10 @@ const TopFoods = () => {
 
     useEffect(()=>{
 
-        fetch('http://localhost:5001/topFoods')
+        fetch('https://restaurant-management-server-phi.vercel.app/topFoods')
         .then(res=>res.json())
         .then(data=>setTopFoods(data))
+        
 
     }, [])
 

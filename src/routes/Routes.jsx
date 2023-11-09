@@ -32,13 +32,13 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         {
           path: "/allFoodItems",
           element: <AllFoodItems></AllFoodItems>,
-          loader:()=>fetch('http://localhost:5001/allFoodItems')
+          loader:()=>fetch('https://restaurant-management-server-phi.vercel.app/allFoodItems')
         },
 
         {
           path: "/singleFood/:id",
           element: <SingleFood></SingleFood>,
-          loader:({params})=>fetch(`http://localhost:5001/allFoodItems/${params.id}`)
+          loader:({params})=>fetch(`https://restaurant-management-server-phi.vercel.app/allFoodItems/${params.id}`)
 
         },
 
@@ -46,7 +46,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         {
           path: "/foodPurchase/:id",
           element: <PrivateRoutes> <FoodPurchase></FoodPurchase></PrivateRoutes>,
-          loader:({params})=>fetch(`http://localhost:5001/foodPurchase/${params.id}`)
+          loader:({params})=>fetch(`https://restaurant-management-server-phi.vercel.app/foodPurchase/${params.id}`)
         },
 
 
@@ -66,7 +66,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         {
           path: "/foodItemsUpdate/:id",
           element:<PrivateRoutes><AddedItemsUpdate></AddedItemsUpdate></PrivateRoutes>,
-          loader:({params})=>fetch(`http://localhost:5001/addFoodItem/${params.id}`)
+          loader:({params})=>fetch(`https://restaurant-management-server-phi.vercel.app/addFoodItem/${params.id}`)
 
         }, 
 
