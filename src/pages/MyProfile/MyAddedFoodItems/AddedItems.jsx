@@ -13,10 +13,12 @@ const AddedItems = ({addFood}) => {
         <div className="flex items-center space-x-2">
         <div className="avatar">
         <div className="w-24 rounded-xl">
+       
         {
-        foodImage &&  
-            <img src={foodName} />
+        foodName &&  
+            <img src={foodImage} />
         }  
+       
         </div>
         </div>
             
@@ -30,7 +32,7 @@ const AddedItems = ({addFood}) => {
        {userEmail}
         </td>
 
-        <td>
+        <td> 
        {foodName}
        </td>
 

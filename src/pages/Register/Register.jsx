@@ -19,6 +19,10 @@ const Register = () => {
         const password =form.get('password')
         console.log(name,img,email, password)
 
+
+        const userData ={
+            name,img,email, password 
+        }
         
         if(password.length < 6){
             toast.error('Password should be at least 6 characters or more')
@@ -53,6 +57,41 @@ const Register = () => {
 
 
     }
+
+
+
+
+    fetch('http://localhost:5001/mail', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      })
+       .then(res=>res.json())
+       .then(data=>{
+        console.log(data)
+        if(data.insertedId){
+         
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "User Mail Update Successfully!",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        }
+        
+        
+       })
+
+   
+
+
+
+    
+  
+
 
 
     return (

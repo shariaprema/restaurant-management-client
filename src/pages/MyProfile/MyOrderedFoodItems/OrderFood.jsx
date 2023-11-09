@@ -2,13 +2,28 @@
 const OrderFood = ({order,handleDelete}) => {
     const {_id,foodImage, foodName,buyerName,email, date,price,quantity}=order || {}
     
-    
+    console.log(order);
    
     
     
     
     return (
         <tr className='text-black text-base font-bold'>
+    <td>
+        <div className="flex items-center space-x-2">
+        <div className="avatar">
+        <div className="w-24 rounded-xl">
+       
+        {
+        foodName &&  
+            <img src={foodImage} />
+        }  
+       
+        </div>
+        </div>
+            
+        </div>
+        </td>
 
         <td>
        {buyerName}
@@ -27,9 +42,6 @@ const OrderFood = ({order,handleDelete}) => {
 
         <td> {quantity} </td>
         <td> {price} </td>
-
-        
-
 
          <th>
          <button onClick={()=>handleDelete(_id)} className="btn btn-square bg-black">

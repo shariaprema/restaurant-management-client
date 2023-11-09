@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from 'sweetalert2'
 
-const AddedItemsUpdate = () => {
+const AddedItemsUpdate = ({}) => {
     const updateFood = useLoaderData();
     const {user} = useContext(AuthContext)
    const{_id, price, userName,userEmail,foodName,foodOrigin,foodImage,foodCategory,quantity,description} = updateFood || {} 
@@ -30,7 +30,7 @@ const AddedItemsUpdate = () => {
         console.log(addFood);
 
 
-        fetch(`http://localhost:5001/addFoodItem/${_id}`, {
+        fetch(`http://localhost:5001/allFoodItems/${_id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -41,10 +41,10 @@ const AddedItemsUpdate = () => {
             .then((data) => {
               console.log(data);
 
-              if(data.insertedId){
+              if(data?.modifiedCount>0){
                 Swal.fire({
                     title: "Success!",
-                    text: "Update Food Items Successfully",
+                    text: "Food Items Update Successfully",
                     icon: "success",
                     confirmButtonText: 'Okk'
                    

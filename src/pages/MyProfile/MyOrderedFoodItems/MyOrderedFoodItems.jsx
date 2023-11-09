@@ -44,7 +44,7 @@ const MyOrderedFoodItems = () => {
                         if (result.isConfirmed) {
                           Swal.fire({
                             title: "Deleted!",
-                            text: "Your file has been deleted.",
+                            text: "Your food has been deleted.",
                             icon: "success"
                           });
                         }
@@ -77,7 +77,8 @@ const MyOrderedFoodItems = () => {
                  
                     <thead>
                     <tr className='text-base  text-white bg-gray-800 ' >
-                                             
+                         <th>
+                        </th>                    
                         <th>BuyerEmail</th>
                         <th>BuyerEmail</th>
                         <th>FoodName</th>

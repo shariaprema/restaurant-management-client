@@ -45,7 +45,7 @@ const Navbar = () => {
 
 
             {/*My Profile */}
-            <div className="menu lg:menu-horizontal  mx-0 my-0 px-0 py-0 ">
+            {/* <div className="menu lg:menu-horizontal  mx-0 my-0 px-0 py-0 ">
             <li>
                 <details >
                 <summary open className="mx-0 my-0 px-0 py-0  bottom-0 "><NavLink className={({ isActive}) => isActive ? "btn btn-primary btn-sm ": 'btn btn-ghost btn-sm' } to='/myProfile'>My Profile</NavLink></summary>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </details>
             </li>
             
-            </div>
+            </div> */}
 
 
 
