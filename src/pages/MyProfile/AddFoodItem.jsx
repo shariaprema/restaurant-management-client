@@ -13,10 +13,13 @@ const AddFoodItem = ({handleAddFoodItem}) => {
 
     return (
         <div>
-            <div className="my-20">
-            <h2>My Food Items</h2>
+            <div className="">
+            <div>
+                <h2 className="text-5xl text-center pt-10 font-bold">Add A Food Item</h2>
             
-            <div class="relative  rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none mx-auto">
+            </div>
+            
+            <div class="relative my-20  rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none mx-auto">
             
             <form onSubmit={handleAddFoodItem} class="mt-8 mb-2  max-w-screen-lg mx-auto ">
                 {/* input field */}

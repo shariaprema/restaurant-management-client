@@ -13,9 +13,15 @@ const SingleFood = () => {
     const {_id,foodName,foodImage,foodCategory,price,foodOrigin,quantity,count,description,madeBy} = singleFood || {}
     return (
         <div className="flex min-h-screen mx-auto" >
+
+            
+            <div className="">
+            <div>
+                <h2 className="text-5xl text-center pt-10 font-bold"><span className="text-primary">Res</span>tho Food</h2>
+            
+            </div>
+
             <div className="py-20">
-
-
             <div className="py-8 relative border sm:flex-none md:flex-none lg:flex w-full  flex-row rounded-xl bg-white bg-clip-border text-black shadow-md">
             <div className="relative flex-1 w-full m-0 overflow-hidden text-black bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border ">
                 <img
@@ -119,6 +125,12 @@ const SingleFood = () => {
 
             </div>
             </div>
+
+            </div>
+                
+
+
+ 
 
             </div>
         </div>

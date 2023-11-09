@@ -27,8 +27,14 @@ const AllFoodItems = () => {
     return (
         <div className="mx-auto">
 
+            
             <div>
-            <h2>AllFoodItems:{result.length}</h2>
+                <h2 className="text-5xl text-center pt-10 font-bold"><span className="text-primary">Res</span>tho All Food Items</h2>
+            
+            </div>
+
+            <div>
+           
 
               {/* Pagination page */}
               <div className="mt-10  font-bold flex items-center justify-center gap-5">

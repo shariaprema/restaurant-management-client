@@ -83,8 +83,13 @@ const MyAddedFoodItems = () => {
 
 <div>
             <h2>
-                My Added Food Items:{addedFoods.length}
+                
             </h2>
+
+            <div>
+                <h2 className="text-5xl text-center pt-10 font-bold">My Added {addedFoods.length} Foods</h2>
+            
+            </div>
 
             <div className='bg-primary mx-8 text-black rounded-lg my-20'>
             <div className="overflow-x-auto">

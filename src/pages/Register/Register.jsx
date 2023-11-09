@@ -20,7 +20,7 @@ const Register = () => {
         console.log(name,img,email, password)
 
 
-        const userData ={
+        const userData = {
             name,img,email, password 
         }
         
@@ -56,34 +56,42 @@ const Register = () => {
           });
 
 
+
+
+
+
+
+          fetch('http://localhost:5001/mail', {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userData),
+          })
+           .then(res=>res.json())
+           .then(data=>{
+            console.log(data)
+            if(data.insertedId){
+             
+                  Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "User Mail Update Successfully!",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            }
+            
+            
+           })
+
+
     }
 
 
 
 
-    fetch('http://localhost:5001/mail', {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userData),
-      })
-       .then(res=>res.json())
-       .then(data=>{
-        console.log(data)
-        if(data.insertedId){
-         
-              Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "User Mail Update Successfully!",
-                showConfirmButton: false,
-                timer: 1500
-              });
-        }
-        
-        
-       })
+  
 
    
 
@@ -95,15 +103,17 @@ const Register = () => {
 
 
     return (
-        <div className=' min-h-screen  flex mx-auto justify-center'>
+
+        <div>
+             <div className=''>
+                <h2 className="text-5xl text-center pt-10 font-bold"><span className="text-primary">Res</span>tho Register Page</h2>
+            </div>
+
+            <div>
+            <div className=' min-h-screen  flex mx-auto justify-center'>
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700
              shadow-none mx-auto justify-center">
-            <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased ">
-            Register
-            </h4>
-            <p className="mt-1 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-                Enter your details to Register.
-            </p>
+           
             <form onSubmit={handleRegister} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
                 <div className="mb-4 flex flex-col gap-6">
                 <div className="relative h-11 w-full min-w-[200px]">
@@ -205,6 +215,12 @@ const Register = () => {
          reverseOrder={false} />  
             
         </div>
+
+            </div>
+        </div>
+
+
+ 
     );
 };
 

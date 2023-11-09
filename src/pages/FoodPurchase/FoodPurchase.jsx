@@ -69,10 +69,14 @@ const FoodPurchase = () => {
 
 
     return (
-        <div className="my-20">
-            <h2>Food purchase</h2>
+        <div className="">
+                      <div>
+                <h2 className="text-5xl text-center pt-10 font-bold">Purchase <span className="text-primary">Res</span>tho Food</h2>
             
-            <div class="relative  rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none mx-auto">
+            </div>
+            
+  <div className="my-20">
+  <div class="relative  rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none mx-auto">
             
             <form onSubmit={handlePurchaseFood} class="mt-8 mb-2  max-w-screen-lg mx-auto ">
                 {/* input field */}
@@ -190,6 +194,7 @@ const FoodPurchase = () => {
               
             </form>
             </div>
+  </div>
 
             <Toaster
             position="top-center"

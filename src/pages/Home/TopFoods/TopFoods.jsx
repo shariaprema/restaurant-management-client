@@ -19,12 +19,11 @@ const TopFoods = () => {
 
     return (
         <div className=" pb-8">
-
-            <div>
-                <p className="text-primary font-bold text-base">Menu List</p>
-                <h2>Our Top Selling Food Items</h2>
-                <p className="text-primary ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, esse! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, esse! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, esse!</p>
+                <div>
+                <h2 className="text-5xl text-center pt-10 font-bold"><span className="text-primary">Res</span>tho Top Selling Foods</h2>
+            
             </div>
+            
 
             <div className="grid  grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto justify-center bg-pri gap-8  py-20 ">
                {

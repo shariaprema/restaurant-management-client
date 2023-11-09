@@ -6,6 +6,7 @@ import img5 from '../../../../assets/banner/banner-6.jpg';
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
+    
     return (
         <div className="carousel w-full sm:h-[400px] md:h-[500px] lg:h-[600px]">
             <div id="slide1" className="carousel-item relative w-full">
